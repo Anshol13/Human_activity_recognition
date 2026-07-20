@@ -1,29 +1,42 @@
-# Human Activity Recognition using Machine Learning
+# 🏃 Human Activity Recognition using Machine Learning
 
-## Overview
-
-This project implements a Human Activity Recognition (HAR) system using the official WISDM Activity Recognition dataset. Three machine learning algorithms are trained and evaluated to classify six human activities using smartphone sensor-derived features.
-
-## Activities Classified
-
-- Walking
-- Jogging
-- Upstairs
-- Downstairs
-- Sitting
-- Standing
+A machine learning web application that classifies human activities using smartphone accelerometer sensor data from the WISDM Activity Recognition Dataset.
 
 ---
 
-## Machine Learning Models
+## 🚀 Live Demo
 
-- Decision Tree
-- K-Nearest Neighbors (KNN)
-- Random Forest
+https://humanactivityrecognition-anshol13.streamlit.app/
 
 ---
 
-## Results
+## 📌 Features
+
+- Predicts six human activities using a trained Random Forest model
+- Upload CSV files for prediction
+- Automatic dataset validation
+- Classification report
+- Confusion matrix
+- Prediction distribution chart
+- Download prediction results
+- Interactive Streamlit dashboard
+
+---
+
+## 📊 Dataset
+
+- **Dataset:** WISDM Activity Recognition Dataset
+- Activities:
+  - Walking
+  - Jogging
+  - Upstairs
+  - Downstairs
+  - Sitting
+  - Standing
+
+---
+
+## 🤖 Machine Learning Models
 
 | Model | Accuracy |
 |--------|----------|
@@ -31,37 +44,37 @@ This project implements a Human Activity Recognition (HAR) system using the offi
 | Decision Tree | 83.92% |
 | KNN | 76.14% |
 
-Random Forest achieved the highest performance and was selected as the final model.
+Random Forest was selected as the final deployed model.
+
 
 ---
 
-## Technologies Used
+## 🛠 Technologies Used
 
 - Python
 - Pandas
 - NumPy
 - Scikit-learn
+- Streamlit
 - Matplotlib
-- Seaborn
-- Jupyter Notebook
+- Joblib
 
 ---
 
-## Dataset
+## 📂 Project Structure
 
-Official WISDM Activity Recognition Dataset
-
----
-
-## Project Workflow
-
-1. Load Dataset
-2. Data Preprocessing
-3. Exploratory Data Analysis
-4. Feature Scaling
-5. Model Training
-6. Model Evaluation
-7. Activity Prediction
+```text
+Human_activity_recognition/
+│
+├── app.py
+├── Human_Activity_Recognition.ipynb
+├── sample_input.csv
+├── requirements.txt
+├── README.md
+├── models/
+├── images/
+└── WISDM_ar_v1.1_transformed.arff
+```
 
 ---
 
@@ -77,11 +90,11 @@ Official WISDM Activity Recognition Dataset
 
 ---
 
-## Future Improvements
+## ▶️ Run Locally
 
-- Deep Learning models (CNN/LSTM)
-- Real-time smartphone activity prediction
-- Streamlit web application
+```bash
+pip install -r requirements.txt
+streamlit run app.py
 
 ---
 
